@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#mainCal {
+  max-width: 1500px;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::placeholder {
+  float: right;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+svg {
+  width: 25px;
+  height: 25px;
+}
+
+.navigation_wrapper {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.askprice_container_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.mortgageCalculator {
+  width: 100%;
+  padding: 40px 30px 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.custom_button2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.custom_button2:hover {
+  color: #000;
+}
+
+.input_wrapper {
+  position: relative;
+  display: flex;
+  width: 50%;
+  gap: 10px;
+}
+
+.formHeading h1 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 52px;
+  padding-bottom: 10px;
+}
+
+.scenariosContainer {
+  width: 100%;
+}
+
+.scenariosContainer table.calTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scenariosContainer table.calTable div {
+  width: 100%;
+}
+
+.scenariosContainer table.calTable div div {
+  width: 100%;
+}
+
+.only-answer {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  margin: 5px 0 10px;
+}
+
+.only-answer .col-text {
+  color: white;
+}
+
+.only-answer svg {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.scenariosContainer table.calTable div div div {
+  border: none;
+}
+
+.scenariosContainer table.calTable div div div.col {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.col-text {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  line-height: 18px;
+  width: 40%;
+}
+
+input.inputField,
+select.selectField {
+  /* text-align: center; */
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: none;
+  border-radius: 2px;
+  border: 1px solid #cdd6d9;
+  color: #000000;
+  background-color: #d9dcdf;
+  line-height: 1.35em;
+  font-size: 18px;
+  padding: 12px 10px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+select.selectField option {
+  background-color: white;
+  border: none;
+  padding: 10px !important;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.empty_container {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+  line-height: 18px;
+  width: 40%;
+}
+
+input.inputField:focus-visible,
+select.selectField:focus-visible {
+  outline: none;
+  border-color: #e72630;
+}
+
+.flex_container {
+  display: flex;
+  width: 100%;
+  padding: 15px 0 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputField {
+  padding-left: 22px !important;
+  border: 0.5px solid;
+  border-color: #d9dcdf;
+}
+
+.purchaseInput {
+  color: #0a596b;
+}
+
+.operator {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+button.btn {
+  background-color: #eb212e;
+  border: none;
+}
+
+.homePriceSelection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.askPriceContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  gap: 12px;
+}
+
+.loanAmount label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #232323;
+}
+
+.loanAmountValue {
+  width: 100%;
+}
+
+.down_pyment_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.down_payment_scenario_wrapper {
+  display: flex;
+  width: 50%;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.col {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.dollarValue:before {
+  content: "$";
+  position: absolute;
+  top: 9px;
+  left: 7px;
+  font-size: 18px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.percentageSign:before {
+  content: "%";
+  position: absolute;
+  top: 12px;
+  left: 6px;
+  font-size: 16px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.bottom_ctn {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .scenariosContainer table.calTable div div div:nth-last-child(-n + 3) {
+    display: none;
+  }
+
+  .formHeading h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .buttonContainer {
+    align-items: stretch;
+  }
+
+  div:empty {
+    display: none;
+  }
+
+  .askPriceContainer {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .col {
+    display: none;
+  }
+
+  .col:first-child {
+    display: block;
+    text-align: start;
+  }
+
+  #purchaseBtn,
+  #renewalBtn {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 15px;
+  }
+
+  .navigation_wrapper {
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  input,
+  select {
+    width: 100%;
+  }
+
+  .askprice_container_wrapper,
+  .homePriceSelection {
+    flex-direction: column;
+    align-items: start;
+    padding-bottom: 20px;
+  }
+
+  .askPriceContainer {
+    width: 100%;
+  }
+
+  .flex_container,
+  .down_pyment_wrapper,
+  .only-answer {
+    align-items: flex-start !important;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .empty_container {
+    display: none;
+  }
+
+  .input_wrapper {
+    width: 100%;
+  }
+
+  .col-text,
+  .col-text select {
+    width: 100% !important;
+  }
+}
